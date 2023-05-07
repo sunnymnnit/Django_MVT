@@ -16,3 +16,9 @@ def centre(request):
     return render(request,"centre.html")
 def pricing(request):
     return render(request,"pricing.html")
+def form(request):
+    return render(request,"form.html")
+def orderForm(request):
+    return render(request,"orderForm.html")
+def myCustomForm(request):
+    return render(request,"myCustomForm.html")

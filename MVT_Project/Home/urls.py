@@ -26,4 +26,8 @@ urlpatterns = [
     path('service', views.service),
     path('feature', views.feature),
     path('pricing', views.pricing),
+    path('centre', views.centre),
+    path('form', views.form),
+    path('orderForm', views.orderForm),
+    path('myCustomForm', views.myCustomForm),
 ]
