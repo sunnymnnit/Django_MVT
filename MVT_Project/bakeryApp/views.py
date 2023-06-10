@@ -1,4 +1,5 @@
 from django.shortcuts import render,HttpResponse
+from bakeryApp.models import BakeryCards
 
 def index(request):
     return render(request,"index.html")
@@ -15,10 +16,14 @@ def feature(request):
 def centre(request):
     return render(request,"centre.html")
 def pricing(request):
-    return render(request,"pricing.html")
+    bakeryCards = BakeryCards.objects.all()
+    context = {'bakeryCards': bakeryCards}
+    return render(request,"pricing.html",context)
 def form(request):
     return render(request,"form.html")
 def orderForm(request):
     return render(request,"orderForm.html")
 def myCustomForm(request):
     return render(request,"myCustomForm.html")
+def cart(request):
+    return render(request,"cart.html")

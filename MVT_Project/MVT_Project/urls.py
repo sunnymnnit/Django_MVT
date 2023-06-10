@@ -22,8 +22,8 @@ admin.site.index_title = "Welcome to BakeryKing"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('Home.urls')),
-    path('about', include('Home.urls')),
-    path('contact', include('Home.urls')),
-    path('careers', include('Home.urls')),
+    path('', include('bakeryApp.urls'))
+    # path('about', include('Home.urls')),
+    # path('contact', include('Home.urls')),
+    # path('careers', include('Home.urls')),
 ]
